@@ -1,0 +1,117 @@
+* {
+    margin: 10px 15px 15px 20px;
+    padding: 10px 15px 15px 20px;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif'
+}
+
+a {
+    text-decoration: none;
+}
+
+.indexBody {
+    background-image: url('../media/mat.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.indexHeader {
+    background-color: #f1f4fd;
+    opacity: 0.8;
+}
+
+.titulos {
+    font-size: 40px;
+    font-weight: 200;
+    padding: 15px;
+    color: purple;
+    opacity: 0.5;
+}
+
+.itemIndex {
+    display: contents;
+    margin: 20px 15px 20px 15px;
+}
+
+.navBar {
+    position: static;
+    top: 10px;
+    background-color: #c5d2f5;
+    width: auto;
+    opacity: 0.5;
+    z-index: auto;
+}
+
+.linkIndex:hover {
+    text-decoration: underline;
+    color: rgb(119, 33, 33);
+    font-size: 20px;
+}
+
+.linkNav:hover {
+    text-decoration: underline;
+}
+
+.linkActivo {
+    text-decoration: underline;
+    color: rgb(173, 36, 36);
+}
+
+div {
+    background-color: #e2e9fa; 
+    height: auto;
+    opacity: 0.9;
+    transform: translate(10px, 20px);
+}
+
+
+.container div {
+    background:#FF5733;
+    width:90%;
+    margin:auto;
+
+    /* Flexbox */
+    display:flex;
+    flex-flow:row wrap;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-container > div {
+  background-image: linear-gradient(to left, blue , orange);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.grid-container div {
+   width: 100px; height: 100px;
+   transition: all 2s;       
+}
+.grid-container div:hover {
+   height: 200px; width: 200px;
+   padding: 20px;
+   background-color: cyan;
+}
+
+h1 {
+   animation-duration: 2s;
+   animation-name: aparecer;
+}
+
+
+@keyframes aparecer {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+}

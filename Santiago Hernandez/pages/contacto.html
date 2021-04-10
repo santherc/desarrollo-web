@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>MISILES A TIERRA</title>
+</head>
+
+<body class="indexBody">
+    <header class=indexHeader>
+        <h1 class="titulo"> MISILES A TIERRA - CONTACTO</h1>
+        <nav class="navBar">
+            <ul class="navBarLista">
+                <li class="itemIndex"><a class="linkIndex" href="../pages/bio.html">Biografia</a></li>
+                <li class="itemIndex"><a class="linkIndex" href="../pages/Discografía.html">Discografia</a></li>
+                <li class="itemIndex"><a class="linkIndex" href="../pages/Integrantes.html">Integrantes</a></li>
+                <li class="itemIndex"><a class="linkIndex" href="../pages/media.html">Media</a></li>
+                <li class="itemIndex"><a class="linkIndex" href="../pages/contacto.html">Contacto</a></li>
+                <li class="itemIndex"><a class="linkIndex" href="../Index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <form action="contacto.html" method="GET">
+            <fieldset>
+                <legend>Información Personal:</legend>
+                <label for="sexo">sexo:</label> <br><br>
+                <input type="radio" name="sexo" value="hombre"> Hombre
+                <input type="radio" name="sexo" value="mujer"> Mujer
+                <br><br>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br><br>
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="estado_civil">Estado Civil</label><br><br>
+                <select name="estado_civil" id="estado_civil">
+                    <option value="estado_civil" selected="">Soltero</option>
+                    <option value="estado_civil">Casado</option>
+                    <option value="estado_civil">Divorciado</option>
+                    <option value="estado_civil">Unión Libre</option>
+                </select><br><br>
+                <label for="recibir_boletin">Recibe nuestro boletin</label> <br><br>
+                <input type="radio" name="recibir" value="Si"> Si
+                <input type="radio" name="recibir" value="No"> No
+                <br><br>
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea><br><br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
